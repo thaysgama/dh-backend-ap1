@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "44cb21ea-7781-4d8a-9236-3317d30212fb",
+		"name": "AvParcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarFilmesPorGenero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/catalog/ação",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"catalog",
+						"ação"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalvarFilmes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Filme\",\r\n    \"genre\": \"Ação\",\r\n    \"urlStream\": \"www.filme.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
